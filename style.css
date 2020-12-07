@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+li, a, button {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #04042c;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    height: 78px;
+    width: 78px;
+}
+
+.navbar_links {
+    list-style: none;
+}
+
+.navbar_links li {
+    display: inline-block;
+    padding: 0px 45px;
+}
+
+.navbar_links li:hover {
+    color: #5f25e9;
+}
+
+.contactusbtn {
+    border-radius: 10px;
+    padding: 8px 20px 8px 20px;
+    border-color: #5f25e9;
+    font-size: 20px;
+}
+
+.hero-section {
+    display: flex;
+}
