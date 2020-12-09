@@ -1,146 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elejobly</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-        <!-- Navbar Header Start -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar Header Start -->
 
     <header>
-        <a href="#">
-            <img class="logo" src="./images/Logo 1.png" alt="sitelogo">
-        </a>
+      <a href="#">
+        <img class="logo" src="./images/Logo 1.png" alt="sitelogo" />
+      </a>
 
-        <nav>
-            <ul class="navbar_links">
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-        <a class="contactUs" href="#"><button class="contactusbtn">Contact Us</button></a>
+      <nav>
+        <ul class="navbar_links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+      <a class="contactUs" href="#"
+        ><button class="contactusbtn">Contact Us</button></a
+      >
     </header>
 
     <!-- Navbar Header End -->
 
-
     <!-- Hero Section Start -->
 
     <section class="hero-section">
+      <!-- Hero Section Left Column -->
+      <div class="hero-left">
+        <h1 class="heading-black">
+          Join <span class="violate">Elejobly</span> & Make A Difference
+        </h1>
+        <p class="heading-description">
+          Work at the most dynamic agency & unlock your true potential
+        </p>
+        <a class="hero-button" href="#"
+          ><button class="violate-btn">View Openings</button></a
+        >
+      </div>
+      <!-- Hero Section Left Column -->
 
-        
-        <!-- Hero Section Left Column -->
-        <div class="hero-left">
-            <h1 class="heading-black">Join <span class="violate">Elejobly</span> & Make A Difference</h1>
-            <p class="heading-description">Work at the most dynamic agency & unlock your true potential</p>
-            <a class="hero-button" href="#"><button class="violate-btn">View Openings</button></a>
-        </div>
-        <!-- Hero Section Left Column -->
-
-
-        <!-- Hero Section Right Column -->
-        <div class="hero-right">
-            <img src="./images/coverRight.png" alt="heroCover">
-        </div>
-        <!-- Hero Section Right Column -->
-
-
+      <!-- Hero Section Right Column -->
+      <div class="hero-right">
+        <img src="./images/coverRight.png" alt="heroCover" />
+      </div>
+      <!-- Hero Section Right Column -->
     </section>
 
     <!-- Hero Section End -->
 
-
     <!-- Search Section Start -->
 
     <section class="search-section">
-        <div class="search-head-block">
-            <h1 class="search-head-header">Job Openings</h1>
-            <p class="available-job">27 Jobs available</p>
-            <input type="text" class="search-jobs-field" placeholder="Search Jobs...">
-            
-            <section class="filter">
-            <!-- Location DropDown -->
-              <div class="location">
-                  <select name="place" id="dropbtn" class="boom">
-                    <option value="ca">CA, United States</option>
-                    <option value="ny">NY, United States</option>
-                    <option value="wa">WA, United States</option>
-                  </select>
-              </div>
-              
-            <!-- Department DropDown -->
-            <div class="department">
-                <select name="department" id="dropbtn" class="boom">
-                  <option value="engineer">Engineer</option>
-                  <option value="freelancer">Freelancer</option>
-                  <option value="banker">Banker</option>
-                </select>
+      <div class="search-head-block">
+        <h1 class="search-head-header">Job Openings</h1>
+        <p class="available-job">27 Jobs available</p>
+        <input
+          type="text"
+          class="search-jobs-field"
+          placeholder="Search Jobs..."
+        />
+
+        <section class="filter">
+          <!-- Location DropDown -->
+          <div class="location">
+            <select name="place" id="dropbtn" class="boom">
+              <option value="ca">CA, United States</option>
+              <option value="ny">NY, United States</option>
+              <option value="wa">WA, United States</option>
+            </select>
+          </div>
+
+          <!-- Department DropDown -->
+          <div class="department">
+            <select name="department" id="dropbtn" class="boom">
+              <option value="engineer">Engineer</option>
+              <option value="freelancer">Freelancer</option>
+              <option value="banker">Banker</option>
+            </select>
+          </div>
+
+          <!-- Worktype DropDown -->
+          <div class="worktype">
+            <select name="worktype" id="dropbtn" class="boom">
+              <option value="civil">Construction</option>
+              <option value="webdev">Web Development</option>
+              <option value="data">Data Entry</option>
+            </select>
+          </div>
+
+          <!-- Remote Toggler -->
+          <div class="remote">
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </section>
+        <!-- Search Header Block end -->
+
+        <!-- Search Results Section -->
+        <section class="search-result">
+          <div class="results">
+            <div class="lefty">
+              <h1>Product Designer <span>(UX Based)</span></h1>
+              <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
             </div>
-
-            
-            <!-- Worktype DropDown -->
-            <div class="worktype">
-                <select name="worktype" id="dropbtn" class="boom">
-                  <option value="civil">Construction</option>
-                  <option value="webdev">Web Development</option>
-                  <option value="data">Data Entry</option>
-                </select>
+            <div class="righty">
+              <button type="submit" class="apply-now">Apply Now</button>
             </div>
+          </div>
 
-            <!-- Remote Toggler -->
-            <div class="remote">
-                <label class="switch">
-                    <input type="checkbox" checked>
-                    <span class="slider round"></span>
-                  </label>
+          <div class="results">
+            <div class="lefty">
+              <h1>Product Designer <span>(UX Based)</span></h1>
+              <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
             </div>
-            </section>
-            <!-- Search Header Block end -->
+            <div class="righty">
+              <button type="submit" class="apply-now">Apply Now</button>
+            </div>
+          </div>
 
-            <!-- Search Results Section -->
-            <section class="search-result">
-                <div class="results">
-                    <div class="lefty">
-                        <h1>Product Designer <span>(UX Based)</span></h1>
-                        <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
-                    </div>
-                    <div class="righty">
-                        <button type="submit">Apply Now</button>
-                    </div>
-                </div>
+          <div class="results">
+            <div class="lefty">
+              <h1>Product Designer <span>(UX Based)</span></h1>
+              <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
+            </div>
+            <div class="righty">
+              <button type="submit" class="apply-now">Apply Now</button>
+            </div>
+          </div>
 
-                <div class="results">
-                    <div class="lefty">
-                        <h1>Product Designer <span>(UX Based)</span></h1>
-                        <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
-                    </div>
-                    <div class="righty">
-                        <button type="submit">Apply Now</button>
-                    </div>
-                </div>
+          <div class="results">
+            <div class="lefty">
+              <h1>Product Designer <span>(UX Based)</span></h1>
+              <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
+            </div>
+            <div class="righty">
+              <button type="submit" class="apply-now">Apply Now</button>
+            </div>
+          </div>
 
-                <div class="results">
-                    <div class="lefty">
-                        <h1>Product Designer <span>(UX Based)</span></h1>
-                        <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
-                    </div>
-                    <div class="righty">
-                        <button type="submit">Apply Now</button>
-                    </div>
-                </div>
-            </section>
+          <div class="results">
+            <div class="lefty">
+              <h1>Product Designer <span>(UX Based)</span></h1>
+              <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
+            </div>
+            <div class="righty">
+              <button type="submit" class="apply-now">Apply Now</button>
+            </div>
+          </div>
 
-
-        </div>
-
+          <div class="load-more">
+            <button type="submit" class="load-more-btn">Apply Now</button>
+          </div>
+        </section>
+        <!-- Search Section Ends -->
+      </div>
     </section>
 
     <!-- Search Section Ends -->
 
-    <script src="script.js"></script>
+    <!-- Team Section -->
+
+    <section class="team-section">
+      <div class="heading">
+        <h1>Ready To Join Our Team?</h1>
+      </div>
+      <div class="team-member-slider">
+        <img src="./images/Image 1.jpg" alt="tm1" />
+        <img src="./images/Image 2.jpg" alt="tm2" />
+        <img src="./images/Image 3.jpg" alt="tm3" />
+        <img src="./images/Image 4.jpg" alt="tm4" />
+        <img src="./images/Image 5.jpg" alt="tm5" />
+      </div>
+    </section>
+
+    <!-- Team Section Ends -->
+
+    <!-- Recruitment Process Section -->
+    <section class="recruitment">
+      <div class="description">
+        <h1>Learn Our Recruitment Process</h1>
+        <p>
+          The recruitment process begins with submission of CVs, followed by
+          phone screening, assessment and a final interview. At Elejobly we
+          believe in working together and working hard. <br /><br />
+          With over 800,000 happy clients, we are looking for dynamic and
+          creative individuals who are willing to dedicate themselves to
+          providing innovative products and services for our clients.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card-col-1">
+          <div class="card">
+            <img src="./images/Icon 1.svg" alt="CV Submission" />
+            <h3>CV Submission</h3>
+            <p>
+              Submit your CV or resume through our online portal if you meet our
+              requirements.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/Icon 2.svg" alt="Phone Screening" />
+            <h3>Phone Screening</h3>
+            <p>
+              After looking at your CV you will be invited for a telephone
+              interview at a time of your choosing.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-col-2">
+          <div class="card">
+            <img src="./images/Icon 3.svg" alt="Skill Assessment" />
+            <h3>Skill Assessment</h3>
+            <p>
+              You will be invited at our head office to take a skills and
+              knowledge assessment.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./images/Icon 4.svg" alt="Final Interview" />
+            <h3>Final Interview</h3>
+            <p>
+                If you can pass all stages we
+                will invite you for a final
+                interview with our CEO and HR
+                executive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Recruitment Section Ends -->
+
+
+<!-- Counter Section -->
+    <section class="counters">
+        <div class="wrapper">
+            <div class="counter col_fourth">
+              <i class="fa fa-code fa-2x"></i>
+              <h2 class="timer count-title count-number" data-to="45" data-speed="2000">45+</h2>
+               <p class="count-text ">Team Members</p>
+            </div>
+        
+            <div class="counter col_fourth">
+              <i class="fa fa-coffee fa-2x"></i>
+              <h2 class="timer count-title count-number" data-to="25" data-speed="2000">25+</h2>
+              <p class="count-text ">Total Products</p>
+            </div>
+        
+            <div class="counter col_fourth">
+              <i class="fa fa-lightbulb-o fa-2x"></i>
+              <h2 class="timer count-title count-number" data-to="800000" data-speed="2000">800,000+</h2>
+              <p class="count-text ">Happy Users</p>
+            </div>
+        
+            <div class="counter col_fourth end">
+              <i class="fa fa-bug fa-2x"></i>
+              <h2 class="timer count-title count-number" data-to="24000" data-speed="2000">24k</h2>
+              <p class="count-text ">Happy Moments</p>
+            </div>
+        </div>
+    </section>
+<!-- Counter Section End -->
+
+<!-- Footer Section -->
+<section class="footer">
+    <div class="logo">
+        <img src="./images/Logo 1.png" alt="logo">
+    </div>
+    <div class="copyright">
+        <p>&#169; Copyright 2020. Powered by WPDeveloper</p>
+    </div>
+    <div class="social-icons">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+</section>
+
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        (function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+		
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+			
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+			
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+			
+			$self.data('countTo', data);
+			
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+			
+			// initialize the element with the starting value
+			render(value);
+			
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+				
+				render(value);
+				
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+				
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+					
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+			
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+	
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+	
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+    </script>
 </body>
 </html>

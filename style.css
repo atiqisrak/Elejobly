@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+
 
 *{
     box-sizing: border-box;
@@ -57,7 +59,7 @@ header {
 
 .hero-section {
     margin: 0;
-    height: 800px;
+    height: 900px;
     width: 1170px;
     padding-left: 133px;
     padding-top: 40px;
@@ -124,7 +126,7 @@ header {
 
 /* Search Section */
 .search-section{
-    height: 900px;
+    height: 1400px;
     background-color: #eef4fd;
 }
 
@@ -135,6 +137,8 @@ header {
     background-color: #5f25e9;
     border-radius: 10px;
     padding: 50px;
+    position: absolute;
+    margin-top: -140px;
 }
 
 .search-head-header{
@@ -274,4 +278,230 @@ header {
     padding: 0 50px 0 50px;
     margin-bottom: 50px;
     border-radius: 10px;
+    height: 150px;
+}
+
+.search-result .results span {
+    color: #838697;
+}
+
+.search-result .results p {
+    color: #5f25e9;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+.search-result .results .righty .apply-now{
+    height: 50px;
+    width: 150px;
+    background-color: #efe9fd;
+    color: #5f25e9;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.search-result .results .righty .apply-now:hover {
+    color: white;
+    background-color: #5f25e9;
+}
+
+.search-result .load-more .load-more-btn{
+    height: 60px;
+    width: 250px;
+    background-color: #5f25e9;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    position: absolute;
+    left: 40%;
+}
+
+.search-result .load-more .load-more-btn:hover {
+    background-color: #efe9fd;
+    color: #5f25e9;
+    border: 2px solid #5f25e9;
+}
+
+
+/* Team Section */
+.team-section {
+    height: 700px;
+    background-color: #5f25e9;
+}
+
+.team-section .heading h1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    color: white;
+    padding: 80px 0 40px 0;
+}
+
+.team-member-slider {
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-member-slider img{
+    height: 400px;
+    width: auto;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.team-member-slider img:hover{
+    opacity: 0.6;
+}
+
+/* Recruitment Process Section */
+
+.recruitment{
+    height: 900px;
+    width: 100%;
+    background-color: #efe9fd;
+    /* padding: 100PX 0 100PX 0; */
+    padding-top: 100PX;
+}
+.recruitment .description {
+    width: 40%;
+    float: left;
+    margin-left: 133px;
+}
+.recruitment h1{
+    /* text-align: center; */
+    font-size: 42px;
+    font-weight: 600;
+    color: black;
+    padding: 80px 0 40px 0;
+    width: 566px;
+}
+.recruitment p{
+    width: 503px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #7d8091;
+}
+.cards {
+    float: right;
+    width: 40%;
+    margin-right: 133px;
+    display: flex;
+}
+.cards .card-col-1 {
+    width: 200px;
+    margin-right: 40px;
+}
+
+.cards .card-col-2 {
+    margin-top: 40px;
+    width: 200px;
+}
+.cards .card {
+    background-color: #fff;
+    width: 220px;
+    height: 250px;
+    margin: 40px 40px 40px 0;
+    padding: 30px;
+    border-radius: 10px;
+}
+.cards .card h3{
+    padding: 20px 0 20px 0;
+    width: 180px;
+}
+.cards .card p{
+    width: 180px;
+}
+.cards img{
+    display: block;
+    margin: auto;
+    height: 60px;
+    width: auto;
+}
+
+/* Counter Section */
+.counters{
+    height: 200px;
+    padding: 25px;
+    color: #808080;
+    text-align: center; 
+}
+    
+.wrapper{
+    background-color: #5f25e9;
+    width: 1070px;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+    /*-=-=-=-=-=-=-=-=-=-=-=- */
+    /* Column Grids */
+    /*-=-=-=-=-=-=-=-=-=-=-=- */
+    
+    .col_half { width: 49%; }
+    .col_third { width: 32%; }
+    .col_fourth { width: 23.5%; }
+    .col_fifth { width: 18.4%; }
+    .col_sixth { width: 15%; }
+    .col_three_fourth { width: 74.5%;}
+    .col_twothird{ width: 66%;}
+    .col_half,
+    .col_third,
+    .col_twothird,
+    .col_fourth,
+    .col_three_fourth,
+    .col_fifth{
+      position: relative;
+      display: inline-block;
+      /* margin-right: 2%; */
+    }
+    .end { margin-right: 0 !important; }
+    /* Column Grids End */
+    
+
+    .counter { 
+        background-color: #5f25e9; 
+        padding: 20px 0; 
+        /* border-radius: 5px; */
+    }
+    .count-title { 
+        font-size: 40px; 
+        font-weight: normal;  
+        margin-top: 10px; 
+        margin-bottom: 0; 
+        text-align: center; 
+        color: white;
+    }
+    .count-text { 
+        font-size: 13px; 
+        font-weight: normal;  
+        margin-top: 10px; 
+        margin-bottom: 0; 
+        text-align: center; 
+        color: white;
+    }
+    .fa-2x { 
+        margin: 0 auto; 
+        float: none; 
+        display: table; 
+        color: #4ad1e5; 
+    }
+
+.footer {
+    width: 1070px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 133px;
+}
+
+.footer .copyright {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer .social-icons i{
+    width: 40px;
+    height: auto;
 }
