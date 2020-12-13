@@ -10,20 +10,29 @@
     <!-- Navbar Header Start -->
 
     <header>
-      <a href="#">
-        <img class="logo" src="./images/Logo 1.png" alt="sitelogo" />
-      </a>
+      <div class="container">
+        <div class="nav-left">
+          <a href="#">
+            <img class="logo" src="./images/Logo 1.png" alt="sitelogo" />
+          </a>
+        </div>
 
-      <nav>
-        <ul class="navbar_links">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Career</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
-      <a class="contactUs" href="#"
-        ><button class="contactusbtn">Contact Us</button></a
-      >
+        <div class="nav-right">
+            <div class="navbar_links">
+              <ul class="links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="contact">
+              <a class="contact-us" href="#">
+                Contact Us
+                <!-- <button class="contactusbtn">Contact Us</button> -->
+              </a>
+            </div>
+        </div>
+      </div>
     </header>
 
     <!-- Navbar Header End -->
@@ -31,25 +40,28 @@
     <!-- Hero Section Start -->
 
     <section class="hero-section">
-      <!-- Hero Section Left Column -->
-      <div class="hero-left">
-        <h1 class="heading-black">
-          Join <span class="violate">Elejobly</span> & Make A Difference
-        </h1>
-        <p class="heading-description">
-          Work at the most dynamic agency & unlock your true potential
-        </p>
-        <a class="hero-button" href="#"
-          ><button class="violate-btn">View Openings</button></a
-        >
+      <div class="container">
+        <!-- Hero Section Left Column -->
+        <div class="hero-left">
+          <h1 class="heading">
+            Join <span class="violate">Elejobly</span> & Make A Difference
+          </h1>
+          <p class="heading-description">
+            Work at the most dynamic agency & unlock your true potential
+          </p>
+          <a class="hero-button" href="#">
+            View Openings
+            <!-- <button class="violate-btn">View Openings</button> -->
+          </a>
+        </div>
+        <!-- Hero Section Left Column -->
+  
+        <!-- Hero Section Right Column -->
+        <div class="hero-right">
+          <img src="./images/coverRight.png" alt="heroCover" />
+        </div>
+        <!-- Hero Section Right Column -->
       </div>
-      <!-- Hero Section Left Column -->
-
-      <!-- Hero Section Right Column -->
-      <div class="hero-right">
-        <img src="./images/coverRight.png" alt="heroCover" />
-      </div>
-      <!-- Hero Section Right Column -->
     </section>
 
     <!-- Hero Section End -->
@@ -57,62 +69,75 @@
     <!-- Search Section Start -->
 
     <section class="search-section">
-      <div class="search-head-block">
-        <h1 class="search-head-header">Job Openings</h1>
-        <p class="available-job">27 Jobs available</p>
-        <input
-          type="text"
-          class="search-jobs-field"
-          placeholder="Search Jobs..."
-        />
+      <div class="container">
 
-        <section class="filter">
-          <!-- Location DropDown -->
-          <div class="location">
-            <select name="place" id="dropbtn" class="boom">
-              <option value="ca">CA, United States</option>
-              <option value="ny">NY, United States</option>
-              <option value="wa">WA, United States</option>
-            </select>
+        <div class="search-head-block">
+          <div class="searchbox-headings">
+            <h1 class="search-head-header">Job Openings</h1>
+            <p class="available-job">27 Jobs available</p>
           </div>
+  
+            <!-- Search Form -->
+          <div class="search-job-field">
+            <form class="search-form">
+              <div class="job-search-box">
+                <input type="search" value="" placeholder="Search jobs..." class="search-input">
+                <button type="submit" class="search-button">
+                  <img src="./images/search.svg" alt="Search Button" class="search-icon">
+                </button>
+              </div>
 
-          <!-- Department DropDown -->
-          <div class="department">
-            <select name="department" id="dropbtn" class="boom">
-              <option value="engineer">Engineer</option>
-              <option value="freelancer">Freelancer</option>
-              <option value="banker">Banker</option>
-            </select>
-          </div>
-
-          <!-- Worktype DropDown -->
-          <div class="worktype">
-            <select name="worktype" id="dropbtn" class="boom">
-              <option value="civil">Construction</option>
-              <option value="webdev">Web Development</option>
-              <option value="data">Data Entry</option>
-            </select>
-          </div>
-
-          <!-- Remote Toggler -->
-          <div class="remote">
-            <label class="switch">
-              <input type="checkbox" checked />
-              <span class="slider round"></span>
-            </label>
-          </div>
-        </section>
+            <div class="filter-options">
+                            <!-- Location DropDown -->
+                <div class="location">
+                  <select name="place" id="dropbtn" class="boom">
+                    <option value="ca">CA, United States</option>
+                    <option value="ny">NY, United States</option>
+                    <option value="wa">WA, United States</option>
+                  </select>
+                </div>
+      
+                <!-- Department DropDown -->
+                <div class="department">
+                  <select name="department" id="dropbtn" class="boom">
+                    <option value="engineer">Engineer</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="banker">Banker</option>
+                  </select>
+                </div>
+      
+                <!-- Worktype DropDown -->
+                <div class="worktype">
+                  <select name="worktype" id="dropbtn" class="boom">
+                    <option value="civil">Construction</option>
+                    <option value="webdev">Web Development</option>
+                    <option value="data">Data Entry</option>
+                  </select>
+                </div>
+      
+                <!-- Remote Toggler -->
+                <div class="remote">
+                  <label class="switch">
+                    <input type="checkbox" unchecked />
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+            </div>
+          </form>
+        </div>
+      </div>
         <!-- Search Header Block end -->
 
         <!-- Search Results Section -->
-        <section class="search-result">
+        <div class="search-result">
           <div class="results">
             <div class="lefty">
               <h1>Product Designer <span>(UX Based)</span></h1>
               <p>Elejobly | <span>Full-Time, Temporary or Contact</span></p>
             </div>
             <div class="righty">
-              <button type="submit" class="apply-now">Apply Now</button>
+              <!-- <button type="submit" class="apply-now">Apply Now</button> -->
+              <a class="apply-now" href="#">Apply Now</a>
             </div>
           </div>
 
@@ -157,9 +182,10 @@
           </div>
 
           <div class="load-more">
-            <button type="submit" class="load-more-btn">Apply Now</button>
+            <a href="#" class="load-more-btn">View All Openings</a>
+            <!-- <button type="submit" class="load-more-btn">Apply Now</button> -->
           </div>
-        </section>
+        </div>
         <!-- Search Section Ends -->
       </div>
     </section>
@@ -172,12 +198,115 @@
       <div class="heading">
         <h1>Ready To Join Our Team?</h1>
       </div>
+
+
+
+
       <div class="team-member-slider">
-        <img src="./images/Image 1.jpg" alt="tm1" />
-        <img src="./images/Image 2.jpg" alt="tm2" />
-        <img src="./images/Image 3.jpg" alt="tm3" />
-        <img src="./images/Image 4.jpg" alt="tm4" />
-        <img src="./images/Image 5.jpg" alt="tm5" />
+
+      <div class="content">
+        <a href="#" target="_blank">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="./images/Image 1.jpg">
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Marsh Mello Jr</h3>
+            <p class="content-text">Founder and CEO | Careerfly</p>
+            <div class="social-icons">
+              <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+      
+      <div class="content">
+        <a href="#" target="_blank">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="./images/Image 2.jpg">
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Marsh Mello Jr</h3>
+            <p class="content-text">Founder and CEO | Careerfly</p>
+            <div class="social-icons">
+              <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+
+      <div class="content">
+        <a href="#" target="_blank">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="./images/Image 3.jpg">
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Marsh Mello Jr</h3>
+            <p class="content-text">Founder and CEO | Careerfly</p>
+            <div class="social-icons">
+              <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+
+      <div class="content">
+        <a href="#" target="_blank">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="./images/Image 4.jpg">
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Marsh Mello Jr</h3>
+            <p class="content-text">Founder and CEO | Careerfly</p>
+            <div class="social-icons">
+              <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+
+      <div class="content">
+        <a href="#" target="_blank">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="./images/Image 5.jpg">
+          <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Marsh Mello Jr</h3>
+            <p class="content-text">Founder and CEO | Careerfly</p>
+            <div class="social-icons">
+              <ul>
+                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+              </ul>
+            </div>
+            
+          </div>
+        </a>
+      </div>
+
+      
+
+
       </div>
     </section>
 
@@ -185,56 +314,65 @@
 
     <!-- Recruitment Process Section -->
     <section class="recruitment">
-      <div class="description">
-        <h1>Learn Our Recruitment Process</h1>
-        <p>
-          The recruitment process begins with submission of CVs, followed by
-          phone screening, assessment and a final interview. At Elejobly we
-          believe in working together and working hard. <br /><br />
-          With over 800,000 happy clients, we are looking for dynamic and
-          creative individuals who are willing to dedicate themselves to
-          providing innovative products and services for our clients.
-        </p>
-      </div>
-
-      <div class="cards">
-        <div class="card-col-1">
-          <div class="card">
-            <img src="./images/Icon 1.svg" alt="CV Submission" />
-            <h3>CV Submission</h3>
-            <p>
-              Submit your CV or resume through our online portal if you meet our
-              requirements.
-            </p>
-          </div>
-          <div class="card">
-            <img src="./images/Icon 2.svg" alt="Phone Screening" />
-            <h3>Phone Screening</h3>
-            <p>
-              After looking at your CV you will be invited for a telephone
-              interview at a time of your choosing.
-            </p>
-          </div>
+      <div class="container">
+        <div class="description">
+          <h1>Learn Our Recruitment Process</h1>
+          <p>
+            The recruitment process begins with submission of CVs, followed by
+            phone screening, assessment and a final interview. At Elejobly we
+            believe in working together and working hard. <br /><br />
+            With over 800,000 happy clients, we are looking for dynamic and
+            creative individuals who are willing to dedicate themselves to
+            providing innovative products and services for our clients.
+          </p>
+  
+          <a href="#" class="load-more-btn">Learn More</a>
+  
         </div>
-
-        <div class="card-col-2">
-          <div class="card">
-            <img src="./images/Icon 3.svg" alt="Skill Assessment" />
-            <h3>Skill Assessment</h3>
-            <p>
-              You will be invited at our head office to take a skills and
-              knowledge assessment.
-            </p>
+  
+        <div class="cards">
+          <div class="card-col-1">
+            <div class="card">
+              <h1>1</h1>
+              <img src="./images/Icon 1.svg" alt="CV Submission" />
+              <h3><br>CV Submission</h3>
+              <p>
+                Submit your CV or resume through our online portal if you meet our
+                requirements.
+              </p>
+            </div>
+            <div class="card">
+              <h1>3</h1>
+              <img src="./images/Icon 3.svg" alt="Skill Assessment" />
+              <h3>Skill Assessment</h3>
+              <p>
+                You will be invited at our head office to take a skills and
+                knowledge assessment.
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <img src="./images/Icon 4.svg" alt="Final Interview" />
-            <h3>Final Interview</h3>
-            <p>
-                If you can pass all stages we
-                will invite you for a final
-                interview with our CEO and HR
-                executive.
-            </p>
+  
+          <div class="card-col-2">
+            <div class="card">
+              <h1>2</h1>
+              <img src="./images/Icon 2.svg" alt="Phone Screening" />
+              <h3>Phone Screening</h3>
+              <p>
+                After looking at your CV you will be invited for a telephone
+                interview at a time of your choosing.
+              </p>
+            </div>
+            <div class="card">
+              <h1>4</h1>
+              <img src="./images/Icon 4.svg" alt="Final Interview" />
+              <h3>Final Interview</h3>
+              <p>
+                  If you can pass all stages we
+                  will invite you for a final
+                  interview with our CEO and HR
+                  executive.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -244,48 +382,59 @@
 
 <!-- Counter Section -->
     <section class="counters">
-        <div class="wrapper">
-            <div class="counter col_fourth">
-              <i class="fa fa-code fa-2x"></i>
-              <h2 class="timer count-title count-number" data-to="45" data-speed="2000">45+</h2>
-               <p class="count-text ">Team Members</p>
-            </div>
         
-            <div class="counter col_fourth">
-              <i class="fa fa-coffee fa-2x"></i>
-              <h2 class="timer count-title count-number" data-to="25" data-speed="2000">25+</h2>
-              <p class="count-text ">Total Products</p>
-            </div>
-        
-            <div class="counter col_fourth">
-              <i class="fa fa-lightbulb-o fa-2x"></i>
-              <h2 class="timer count-title count-number" data-to="800000" data-speed="2000">800,000+</h2>
-              <p class="count-text ">Happy Users</p>
-            </div>
-        
-            <div class="counter col_fourth end">
-              <i class="fa fa-bug fa-2x"></i>
-              <h2 class="timer count-title count-number" data-to="24000" data-speed="2000">24k</h2>
-              <p class="count-text ">Happy Moments</p>
-            </div>
-        </div>
     </section>
 <!-- Counter Section End -->
 
 <!-- Footer Section -->
 <section class="footer">
-    <div class="logo">
-        <img src="./images/Logo 1.png" alt="logo">
-    </div>
-    <div class="copyright">
-        <p>&#169; Copyright 2020. Powered by WPDeveloper</p>
-    </div>
-    <div class="social-icons">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-    </div>
+  <div class="container">
+
+
+    <div class="wrapper">
+      <div class="counter col_fourth">
+        <i class="fa fa-code fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="45" data-speed="2000">45+</h2>
+         <p class="count-text ">Team Members</p>
+      </div>
+  
+      <div class="counter col_fourth">
+        <i class="fa fa-coffee fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="25" data-speed="2000">25+</h2>
+        <p class="count-text ">Total Products</p>
+      </div>
+  
+      <div class="counter col_fourth">
+        <i class="fa fa-lightbulb-o fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="800000" data-speed="2000">800,000+</h2>
+        <p class="count-text ">Happy Users</p>
+      </div>
+  
+      <div class="counter col_fourth end">
+        <i class="fa fa-bug fa-2x"></i>
+        <h2 class="timer count-title count-number" data-to="24000" data-speed="2000">24k</h2>
+        <p class="count-text ">Happy Moments</p>
+      </div>
+  </div>
+
+
+<div class="real-footer">
+  <div class="logo">
+      <img src="./images/Logo 1.png" alt="logo">
+  </div>
+  <div class="copyright">
+      <p>&#169; Copyright 2020. Powered by WPDeveloper</p>
+  </div>
+  <div class="social-icons">
+    <ul>
+      <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+      <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+    </ul>
+  </div>
+</div>
+  </div>
 </section>
 
 
